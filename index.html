@@ -1,0 +1,27 @@
+<html>
+ <head> 
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
+  <title>你干嘛</title> 
+  <style>
+    #container{
+      border:5px;
+    }
+  </style> 
+ </head> 
+ <body> 
+  <div id="container"> 
+  </div> 
+  <script>
+    var divContainer = document.getElementById('container')
+    var imgWidth = 95 + 'px';
+    for(var i = 0; i <= 27; i++){
+      var src = 'cxk/' + i + '.jpeg';
+      var img = document.createElement('img');
+      img.src = src;
+      img.style.width = 95 + 'px';
+      img.style.margin = 8 + 'px';
+      divContainer.appendChild(img);
+    }
+    </script>  
+ </body>
+</html>
